@@ -12,8 +12,6 @@ z = diff(y);
 figure(1);
 subplot(2, 1, 1)
 % symbolic plotting
-fplot(y, [0, 2*pi], 'LineWidth', 3);
-grid on;
 hold on;
 
 subplot(2, 1, 2);
@@ -35,3 +33,6 @@ stem(t1(1:length(y1) -1), z1, 'm' );
 
 
 
+
+fplot(y, [0, 2*pi], 'LineWidth', 3);
+grid on;

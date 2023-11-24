@@ -5,7 +5,7 @@
 % define symbol for differential equation
 syms y(t)
 
-%% Equation d^2y/dt^2 + 5 dy(t)/dt +  6* = x(t)
+%% Equation d^2y/dt^2 + 5 dy(t)/dt +  6 = x(t)
 % Setting x(t) = 1 will give unit response, derivative of x as impulse
 % response and integration will give ramp response
 
@@ -38,9 +38,4 @@ grid on;
 title('Ramp response');
 
 
-%% ty; + 3y = 0; y(1) = 2
-% solution y = 2/t^3
-syms y(t)
-eqn = diff(y, t) + 3*y/t ==0;
-cond = y(1) == 2;
-y(t) = dsolve(eqn, cond);
+
